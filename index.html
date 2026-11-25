@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>RPS OBE — Poltekkes Kemenkes Manado</title>
+  <meta name="description" content="Penyusunan Rencana Pembelajaran Semester berbasis OBE sesuai formulir FM.I-2-02.">
+  <meta name="theme-color" content="#0B6F6A">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/">
+      <img src="icons/icon.svg" alt="" width="32" height="32">
+      <span>
+        <strong>RPS OBE</strong>
+        <small>Poltekkes Kemenkes Manado</small>
+      </span>
+    </a>
+    <nav class="mainnav" aria-label="Menu utama">
+      <a href="#/" data-nav="home">Daftar RPS</a>
+      <a href="#/master" data-nav="master">Data master</a>
+      <a href="#/pengaturan" data-nav="pengaturan">Pengaturan</a>
+    </nav>
+    <div class="topbar-end">
+      <span id="conn" class="conn" title="Status penyimpanan"></span>
+      <button id="installBtn" class="btn btn-ghost btn-sm" hidden>Pasang aplikasi</button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <dialog id="modal" aria-labelledby="modalTitle"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="busy" hidden><div class="spinner" aria-hidden="true"></div><span id="busyText">Memuat…</span></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/importer.js" defer></script>
+  <script src="js/docx-fill.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
