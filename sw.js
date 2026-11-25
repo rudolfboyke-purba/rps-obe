@@ -1,6 +1,6 @@
 /* Service worker: aplikasi tetap bisa dibuka saat offline.
    Naikkan VERSION setiap kali file aplikasi diperbarui agar perangkat mengambil versi baru. */
-const VERSION = 'rps-obe-v1';
+const VERSION = 'rps-obe-v2';
 const SHELL = [
   './', 'index.html', 'manifest.webmanifest', 'css/style.css',
   'js/config.js', 'js/api.js', 'js/importer.js', 'js/docx-fill.js', 'js/app.js',

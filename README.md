@@ -52,7 +52,7 @@ apps-script/Code.gs      kode untuk Google Apps Script (tidak dipakai oleh GitHu
 3. Klik **Simpan dan uji koneksi**. Label di kanan atas berubah menjadi **Google Sheet**.
 
 Setiap perangkat perlu melakukan langkah ini sekali. Kode akses disimpan di perangkat masing-masing dan tidak tercantum di GitHub.
-Jika ingin URL terisi otomatis untuk semua orang, isi `apiUrl` di `js/config.js` (kode akses tetap diisi manual).
+Alamat Web App sudah tertanam di `js/config.js`, jadi pengguna cukup mengisi kode akses. Kode akses tetap diisi manual di tiap perangkat.
 
 ## Cara pakai
 
